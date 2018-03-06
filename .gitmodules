@@ -1,0 +1,6 @@
+[submodule "PyHDB"]
+	path = PyHDB
+	url = https://github.com/SAP/PyHDB.git
+[submodule "django_hana_pyhdb"]
+	path = django_hana_pyhdb
+	url = https://github.com/mathebox/django_hana_pyhdb.git
