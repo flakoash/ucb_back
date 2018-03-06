@@ -25,7 +25,7 @@ SECRET_KEY = 'ltgi1s-$y+5_=97ki%h1gumw+68!$tt_$n*ji4$3kju&w44eu$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.18.63']
 
 
 # Application definition
@@ -95,11 +95,11 @@ WSGI_APPLICATION = 'ucb_back.wsgi.application'
 DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'ucbback',
-            'USER': 'ucb',
-            'PASSWORD': 'secret',
-            'HOST': 'localhost',
-            'PORT': '',
+            'NAME': 'rrhh',
+            'USER': 'remoto',
+            'PASSWORD': 'Rrhh1234',
+            'HOST': '192.168.18.63',
+            'PORT': '3306',
         }
     }
 
