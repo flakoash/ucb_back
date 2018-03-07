@@ -1,1 +1,4 @@
 myprojectenv/
+.idea
+django_hana.egg-info
+
