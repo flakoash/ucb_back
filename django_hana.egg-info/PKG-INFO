@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: django-hana
+Version: 1.1
+Summary: SAP HANA backend for Django 1.8
+Home-page: https://github.com/mathebox/django_hana
+Author: Max Bothe, Kapil Ratnani
+Author-email: mathebox@gmail.com, kapil.ratnani@iiitb.net
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
