@@ -4,6 +4,7 @@ from .models import *
 # Register your models here
 # .
 
-admin.site.register(Regional)
-admin.site.register(Departamento)
+admin.site.register(XOXOXO)
+
+
 
