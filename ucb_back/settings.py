@@ -37,7 +37,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'GestionDepartamentos',
     'employees',
 )
 
@@ -87,23 +86,23 @@ WSGI_APPLICATION = 'ucb_back.wsgi.application'
 #    }
 #}
 
+DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+
 #DATABASES = {
 #        'default': {
 #            'ENGINE': 'django.db.backends.mysql',
-#            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#            'NAME': 'rrhh',
+#            'USER': 'remoto',
+#            'PASSWORD': 'Rrhh1234',
+#            'HOST': '192.168.18.63',
+#            'PORT': '3306',
 #        }
 #    }
-
-DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'rrhh',
-            'USER': 'remoto',
-            'PASSWORD': 'Rrhh1234',
-            'HOST': '192.168.18.63',
-            'PORT': '3306',
-        }
-    }
 
 
 
