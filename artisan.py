@@ -29,7 +29,7 @@ try:
             #include urls to main urls.py
             urls = open('ucb_back/urls.py', 'r')
             data = urls.readlines()
-            s = "    url(r'', include('" + view_name + ".urls')), \n ]"
+            s = "    url('"+ view_name +"/', include('" + view_name + ".urls')), \n ]"
             data[len(data) - 1] = s
             with open('ucb_back/urls.py', 'w') as file:
                 file.writelines(data)

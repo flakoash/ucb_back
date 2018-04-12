@@ -7,6 +7,9 @@ class XOXOXOForm(ModelForm):
     class Meta:
         model = XOXOXO
         fields = []
+        labels = {
+            "name": "Nombre"
+        }
 
 def index(request, template_name='XOXOXO/index.html'):
     object = XOXOXO.objects.all()
