@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -74,6 +75,8 @@ WSGI_APPLICATION = 'ucb_back.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
+
+#-------------------------- HANA Connection ------------------------------------
 #DATABASES = {
 #    'default': {
 #        'ENGINE': 'django_hana',
@@ -85,6 +88,8 @@ WSGI_APPLICATION = 'ucb_back.wsgi.application'
 #    }
 #}
 
+
+#-------------------------- SQLite Connection ------------------------------------
 DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
@@ -92,6 +97,8 @@ DATABASES = {
         }
     }
 
+
+#-------------------------- MySQL Connection ------------------------------------
 #DATABASES = {
 #        'default': {
 #            'ENGINE': 'django.db.backends.mysql',
@@ -118,6 +125,17 @@ USE_L10N = True
 
 USE_TZ = False
 
+
+# Rest Framework
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ),
+}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/

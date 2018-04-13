@@ -1,62 +1,84 @@
 
 import sys
-import argparse
 import os
+import platform
 
 print(sys.argv)
 
+
+def cp(src, dest):
+    old = open(src, 'r')
+    new = open(dest, 'w')
+    buff = old.read()
+    nbuff = buff.replace('XOXOXO', view_name)
+    new.write(nbuff)
+    old.close()
+    new.close()
+
+
+def appendURL(api=False):
+    aux = "" if api else view_name+"/"
+    urls = open(ParentDir + '/' + ProjectName + '/urls.py', 'r')
+    data = urls.readlines()
+    s = "    url('" + aux + "', include('" + view_name + ".urls')), \n ]"
+    data[len(data) - 1] = s
+    with open(ParentDir + '/' + ProjectName + '/urls.py', 'w') as file:
+        file.writelines(data)
+
+
+def getParentDir():
+    dir = os.popen('pwd').read()
+
+    return dir, dir.split('/')[-1].replace('\n', '')
+
+
 try:
+    ParentDir, ProjectName = getParentDir()
+    #if sys.argv[1] == 'qwerty':
+    #    OSslash = '\\\\' if platform.system() != 'Windows' else '/'
+    #    print(OSslash)
     if sys.argv[1] == 'makeapp':
         view_name = sys.argv[2].title()
         os.system('python manage.py startapp '+view_name)
         if '-r' in sys.argv or '--resource' in sys.argv:
-            #create url.py
-            old = open('artisan/urls.py', 'r')
-            new = open(view_name+'/urls.py', 'w')
-            buff = old.read()
-            nbuff = buff.replace('XOXOXO', view_name)
-            new.write(nbuff)
-            old.close()
-            new.close()
-            #replace views.py
-            old = open('artisan/views.py', 'r')
-            new = open(view_name + '/views.py', 'w')
-            buff = old.read()
-            nbuff = buff.replace('XOXOXO', view_name)
-            new.write(nbuff)
-            old.close()
-            new.close()
-            #include urls to main urls.py
-            urls = open('ucb_back/urls.py', 'r')
-            data = urls.readlines()
-            s = "    url('"+ view_name +"/', include('" + view_name + ".urls')), \n ]"
-            data[len(data) - 1] = s
-            with open('ucb_back/urls.py', 'w') as file:
-                file.writelines(data)
+            print('---Creating resource APP---')
+            # create url.py
+            cp(ParentDir+'/artisan/urls.py', ParentDir+'/' + view_name + '/urls.py')
+            # create views.py
+            cp(ParentDir+'/artisan/views.py', ParentDir+'/' + view_name + '/views.py')
+            # include urls to main urls.py
+            appendURL()
             #create models.py
-            old = open('artisan/models.py', 'r')
-            new = open(view_name + '/models.py', 'w')
-            buff = old.read()
-            nbuff = buff.replace('XOXOXO', view_name)
-            new.write(nbuff)
-            old.close()
-            new.close()
-            #create template folder for the new resource
-            os.system("mkdir templates/"+view_name)
+            cp(ParentDir+'/artisan/models.py', ParentDir+'/' + view_name + '/models.py')
+        if '-t' in sys.argv or '--template' in sys.argv:
+            # create template folder for the new resource
+            os.system("mkdir templates/" + view_name)
             #create HTML template files
-            os.system("cp artisan/templates/index.html templates/"+view_name+"/index.html")
-            os.system("cp artisan/templates/create_form.html templates/"+view_name+"/create_form.html")
-            os.system("cp artisan/templates/show.html templates/"+view_name+"/show.html")
-            os.system("cp artisan/templates/confirm_delete.html templates/"+view_name+"/confirm_delete.html")
+            os.system("cp " + ParentDir + "/artisan/templates/index.html " + ParentDir + "/templates/"+view_name+"/index.html")
+            os.system("cp " + ParentDir + "/artisan/templates/create_form.html " + ParentDir + "/templates/"+view_name+"/create_form.html")
+            os.system("cp " + ParentDir + "/artisan/templates/show.html " + ParentDir + "/templates/"+view_name+"/show.html")
+            os.system("cp " + ParentDir + "/artisan/templates/confirm_delete.html " + ParentDir + "/templates/"+view_name+"/confirm_delete.html")
+
+        if '--rest' in sys.argv:
+            print('---Creating REST APP---')
+            # create url.py
+            cp(ParentDir + '/artisan/rest/urls.py', ParentDir + '/' + view_name + '/urls.py')
+            # create views.py
+            cp(ParentDir + '/artisan/rest/views.py', ParentDir + '/' + view_name + '/views.py')
+            # include urls to main urls.py
+            appendURL(api=True)
+            # create models.py
+            cp(ParentDir + '/artisan/models.py', ParentDir + '/' + view_name + '/models.py')
         if '-a' in sys.argv or '--admin' in sys.argv:
+            print('---Registering the APP in Admin---')
             #Register to admin
-            old = open('artisan/admin.py', 'r')
-            new = open(view_name + '/admin.py', 'w')
-            buff = old.read()
-            nbuff = buff.replace('XOXOXO', view_name)
-            new.write(nbuff)
-            old.close()
-            new.close()
+            cp(ParentDir + '/artisan/admin.py', ParentDir + '/' +view_name + '/admin.py')
+        print('New App created successfully! \n'
+              '###############################################################\n'
+              '####Do not Forget to REGISTER the app inside INSTALLED_APPS####\n'
+              '####                    on settings.py:                    ####\n'
+              '####                      \'' + view_name + '\',                     ####\n'
+              '###############################################################\n')
     else:
         a = ''
         i=0
@@ -67,7 +89,10 @@ try:
         os.system('python manage.py ' + a)
 
 except:
-    print("error")
+    print("Ups! Something in the speedforce is not working fine")
+
+
+
 
 
 
