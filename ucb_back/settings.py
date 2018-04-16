@@ -25,7 +25,7 @@ SECRET_KEY = 'ltgi1s-$y+5_=97ki%h1gumw+68!$tt_$n*ji4$3kju&w44eu$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.18.63', 'localhost', 'adrianrojas.pythonanywhere.com']
+ALLOWED_HOSTS = ['192.168.18.63', 'localhost', 'adrianrojas.pythonanywhere.com' ]
 
 
 # Application definition
