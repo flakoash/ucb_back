@@ -143,7 +143,7 @@ REST_FRAMEWORK = {
 }
 
 CORS_ORIGIN_WHITELIST = (
-    '190.104.29.19'
+    '190.104.29.19',
     '0.0.0.0'
 )
 
