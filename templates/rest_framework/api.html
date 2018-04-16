@@ -1,12 +1,22 @@
 {% extends "rest_framework/base.html" %}
 {% load i18n %}
+{% load static %}
+
+{% block bootstrap_theme %}
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" type="text/css">
+{% endblock %}
 
 {% block title%}
-{% trans 'Rest Service de la Base Nacional de RRHH' %}
+    {% trans 'Rest Service de la Base Nacional de RRHH' %}
 {% endblock %}
 
 {% block branding %}
+    <a class="navbar-left">
+        <img style="max-width:45px; margin-top: 3px;" src="{% static "img/UCBSinFondo.png" %}" alt="My image"/>
+    </a>
+
     <a class="navbar-brand" rel="nofollow" href="#">
         {% trans 'Base de Datos Nacional de RRHH' %}
     </a>
+    curl -X POST http://localhost:8000/api/Persona/ -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -H 'Postman-Token: 2d2c929a-ff99-443e-a58f-a11096d5fe6c' -d '{"name":"juan"}'
 {% endblock %}

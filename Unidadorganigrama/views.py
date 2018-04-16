@@ -1,39 +1,43 @@
 from rest_framework import views, serializers, status
 from rest_framework.response import Response
-from .serializers import XOXOXOSerializer
-from .models import XOXOXO
+from .serializers import UnidadorganigramaSerializer
+from .models import Unidadorganigrama
 from django.http import Http404
 
 
-class XOXOXOView(views.APIView):
+class UnidadorganigramaView(views.APIView):
     def get(self, request, format=None):
-        queryset = XOXOXO.objects.all()
-        serializer = XOXOXOSerializer(queryset, many=True)
+        cols = request.data['cols']
+        print cols[0]
+        queryset = Unidadorganigrama.objects.only("name","cod")
+        serializer = UnidadorganigramaSerializer(queryset, many=True)
+        serializer.fields("name","cod")
         return Response(serializer.data)
 
     def post(self, request, *args, **kwargs):
-        serializer = XOXOXOSerializer(data=request.data)
+        print request.data
+        serializer = UnidadorganigramaSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-class XOXOXODetailView(views.APIView):
+class UnidadorganigramaDetailView(views.APIView):
     def get_object(self, pk):
         try:
-            return XOXOXO.objects.get(pk=pk)
-        except XOXOXO.DoesNotExist:
+            return Unidadorganigrama.objects.get(pk=pk)
+        except Unidadorganigrama.DoesNotExist:
             raise Http404
 
     def get(self, request, pk, format=None):
         queryset = self.get_object(pk)
-        serializer = XOXOXOSerializer(queryset)
+        serializer = UnidadorganigramaSerializer(queryset)
         return Response(serializer.data)
 
     def put(self, request, pk, format=None):
         queryset = self.get_object(pk)
-        serializer = XOXOXOSerializer(queryset, data=request.data)
+        serializer = UnidadorganigramaSerializer(queryset, data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
