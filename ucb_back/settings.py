@@ -143,8 +143,8 @@ REST_FRAMEWORK = {
 }
 
 CORS_ORIGIN_WHITELIST = (
-    'localhost:8000',
     '190.104.29.19'
+    '0.0.0.0'
 )
 
 # Static files (CSS, JavaScript, Images)
