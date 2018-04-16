@@ -148,10 +148,12 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = (
     '190.104.29.19',
     '0.0.0.0:8000',
+    '127.0.0.1:8000',
 )
 CORS_ORIGIN_REGEX_WHITELIST = (
     '190.104.29.19',
     '0.0.0.0:8000',
+    '127.0.0.1:8000',
 )
 
 # Static files (CSS, JavaScript, Images)
