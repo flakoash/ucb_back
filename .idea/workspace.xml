@@ -101,8 +101,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ucb_back/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1249">
-              <caret line="47" column="59" lean-forward="false" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
+            <state relative-caret-position="235">
+              <caret line="158" column="32" lean-forward="false" selection-start-line="158" selection-start-column="32" selection-end-line="158" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -369,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523919190853</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="conf cors4">
+      <created>1523969360976</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1523969360976</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -436,7 +443,8 @@
     <MESSAGE value="conf cors" />
     <MESSAGE value="conf cors2" />
     <MESSAGE value="conf cors3" />
-    <option name="LAST_COMMIT_MESSAGE" value="conf cors3" />
+    <MESSAGE value="conf cors4" />
+    <option name="LAST_COMMIT_MESSAGE" value="conf cors4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -680,8 +688,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ucb_back/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1249">
-          <caret line="47" column="59" lean-forward="false" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
+        <state relative-caret-position="235">
+          <caret line="158" column="32" lean-forward="false" selection-start-line="158" selection-start-column="32" selection-end-line="158" selection-end-column="32" />
           <folding />
         </state>
       </provider>
