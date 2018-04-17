@@ -44,8 +44,8 @@ INSTALLED_APPS = (
 )
 
 MIDDLEWARE_CLASSES = (
-    'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -145,16 +145,16 @@ REST_FRAMEWORK = {
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_WHITELIST = (
-    '190.104.29.19',
-    '0.0.0.0:8000',
-    '127.0.0.1:8000',
-)
-CORS_ORIGIN_REGEX_WHITELIST = (
-    '190.104.29.19',
-    '0.0.0.0:8000',
-    '127.0.0.1:8000',
-)
+#CORS_ORIGIN_WHITELIST = (
+#    '190.104.29.19',
+#    '0.0.0.0:8000',
+#    '127.0.0.1:8000',
+#)
+#CORS_ORIGIN_REGEX_WHITELIST = (
+#    '190.104.29.19',
+#    '0.0.0.0:8000',
+#    '127.0.0.1:8000',
+#)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
