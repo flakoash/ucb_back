@@ -22,7 +22,7 @@ class PersonaView(views.APIView):
 class PersonaDetailView(views.APIView):
     def get_object(self, pk):
         try:
-            return Persona.objects.get(pk=pk)
+            return Persona.objects.get(user__username=pk)
         except Persona.DoesNotExist:
             raise Http404
 

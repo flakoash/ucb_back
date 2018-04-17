@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bb20d835-f56c-4c53-83cf-3ed28a65e721" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ucb_back/settings.py" afterPath="$PROJECT_DIR$/ucb_back/settings.py" />
+      <change beforePath="$PROJECT_DIR$/Persona/serializers.py" afterPath="$PROJECT_DIR$/Persona/serializers.py" />
+      <change beforePath="$PROJECT_DIR$/Persona/urls.py" afterPath="$PROJECT_DIR$/Persona/urls.py" />
+      <change beforePath="$PROJECT_DIR$/Persona/views.py" afterPath="$PROJECT_DIR$/Persona/views.py" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,13 +42,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Django default" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="auth_user: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -54,11 +50,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ucb_back/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="201" column="5" lean-forward="true" selection-start-line="201" selection-start-column="5" selection-end-line="201" selection-end-column="33" />
+            <state relative-caret-position="166">
+              <caret line="160" column="24" lean-forward="true" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="24" />
               <folding>
                 <element signature="e#382#391#0" expanded="true" />
               </folding>
@@ -69,8 +65,8 @@
       <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Persona/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="19" column="46" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+            <state relative-caret-position="294">
+              <caret line="21" column="96" lean-forward="false" selection-start-line="21" selection-start-column="96" selection-end-line="21" selection-end-column="96" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -78,11 +74,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Persona/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="70">
+              <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Persona/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Persona/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="9" column="74" lean-forward="false" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
+            <state relative-caret-position="196">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -142,8 +158,6 @@
         <option value="$PROJECT_DIR$/artisan/restView.py" />
         <option value="$PROJECT_DIR$/artisan/resturls.py" />
         <option value="$PROJECT_DIR$/Persona/admin.py" />
-        <option value="$PROJECT_DIR$/Persona/urls.py" />
-        <option value="$PROJECT_DIR$/Persona/views.py" />
         <option value="$PROJECT_DIR$/artisan/rest/urls.py" />
         <option value="$PROJECT_DIR$/Personas/models.py" />
         <option value="$PROJECT_DIR$/artisan.py" />
@@ -153,8 +167,10 @@
         <option value="$PROJECT_DIR$/templates/rest_framework/api.html" />
         <option value="$PROJECT_DIR$/Unidadorganigrama/views.py" />
         <option value="$PROJECT_DIR$/Persona/models.py" />
-        <option value="$PROJECT_DIR$/Persona/serializers.py" />
         <option value="$PROJECT_DIR$/ucb_back/settings.py" />
+        <option value="$PROJECT_DIR$/Persona/serializers.py" />
+        <option value="$PROJECT_DIR$/Persona/views.py" />
+        <option value="$PROJECT_DIR$/Persona/urls.py" />
       </list>
     </option>
   </component>
@@ -396,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523995735847</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added allowed headers:&#10;Access-Control-Allow-Methods&#10;to communicate with front">
+      <created>1523995942866</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1523995942866</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -469,7 +492,8 @@
     <MESSAGE value="implemented create user join persona" />
     <MESSAGE value="added allowed headers:&#10;Access-Control-Allow-Origin&#10;to communicate with front" />
     <MESSAGE value="added allowed headers:&#10;Access-Control-Allow-Headers&#10;to communicate with front" />
-    <option name="LAST_COMMIT_MESSAGE" value="added allowed headers:&#10;Access-Control-Allow-Headers&#10;to communicate with front" />
+    <MESSAGE value="added allowed headers:&#10;Access-Control-Allow-Methods&#10;to communicate with front" />
+    <option name="LAST_COMMIT_MESSAGE" value="added allowed headers:&#10;Access-Control-Allow-Methods&#10;to communicate with front" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -487,31 +511,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/artisan/templates/confirm_delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artisan/templates/show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GestionDepartamentos/models.py" />
-    <entry file="file://$PROJECT_DIR$/artisan/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employees/admin.py" />
-    <entry file="file://$PROJECT_DIR$/GestionDepartamentos/admin.py" />
-    <entry file="file://$PROJECT_DIR$/employees/views.py" />
     <entry file="file://$PROJECT_DIR$/employees/models.py" />
     <entry file="file://$PROJECT_DIR$/employees/urls.py" />
     <entry file="file://$PROJECT_DIR$/artisan/templates/create_form.html">
@@ -569,8 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Persona/views.py" />
-    <entry file="file://$PROJECT_DIR$/Persona/urls.py" />
     <entry file="file://$PROJECT_DIR$/Personas/serializers.py" />
     <entry file="file://$PROJECT_DIR$/artisan/urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -675,14 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ucb_back/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="31" column="66" lean-forward="false" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/rest_framework/api.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -701,23 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/d5568766/bc5bc9e8-317b-4bd3-8a0d-add44d52bf5a/main.auth_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Persona/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="46" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ucb_back/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -726,23 +698,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Persona/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="21" column="96" lean-forward="false" selection-start-line="21" selection-start-column="96" selection-end-line="21" selection-end-column="96" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myprojectenv/local/lib/python2.7/site-packages/rest_framework_simplejwt/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ucb_back/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ucb_back/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="160" column="24" lean-forward="true" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="24" />
+          <folding>
+            <element signature="e#382#391#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/d5568766/bc5bc9e8-317b-4bd3-8a0d-add44d52bf5a/main.django_session">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/d5568766/bc5bc9e8-317b-4bd3-8a0d-add44d52bf5a/main.auth_group">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/d5568766/bc5bc9e8-317b-4bd3-8a0d-add44d52bf5a/main.auth_group_permissions">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/d5568766/bc5bc9e8-317b-4bd3-8a0d-add44d52bf5a/main.auth_permission">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/d5568766/bc5bc9e8-317b-4bd3-8a0d-add44d52bf5a/main.auth_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/d5568766/bc5bc9e8-317b-4bd3-8a0d-add44d52bf5a/main.auth_user_groups">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/d5568766/bc5bc9e8-317b-4bd3-8a0d-add44d52bf5a/main.auth_user_user_permissions">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Persona/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="74" lean-forward="false" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
+        <state relative-caret-position="196">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ucb_back/settings.py">
+    <entry file="file://$PROJECT_DIR$/Persona/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="201" column="5" lean-forward="true" selection-start-line="201" selection-start-column="5" selection-end-line="201" selection-end-column="33" />
-          <folding>
-            <element signature="e#382#391#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="70">
+          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Persona/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
