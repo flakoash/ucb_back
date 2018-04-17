@@ -47,11 +47,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ucb_back/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="166">
-              <caret line="160" column="24" lean-forward="true" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="24" />
+              <caret line="139" column="3" lean-forward="false" selection-start-line="139" selection-start-column="3" selection-end-line="139" selection-end-column="3" />
               <folding>
                 <element signature="e#382#391#0" expanded="true" />
               </folding>
@@ -71,7 +71,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Persona/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
@@ -164,10 +164,10 @@
         <option value="$PROJECT_DIR$/templates/rest_framework/api.html" />
         <option value="$PROJECT_DIR$/Unidadorganigrama/views.py" />
         <option value="$PROJECT_DIR$/Persona/models.py" />
-        <option value="$PROJECT_DIR$/ucb_back/settings.py" />
         <option value="$PROJECT_DIR$/Persona/serializers.py" />
         <option value="$PROJECT_DIR$/Persona/urls.py" />
         <option value="$PROJECT_DIR$/Persona/views.py" />
+        <option value="$PROJECT_DIR$/ucb_back/settings.py" />
       </list>
     </option>
   </component>
@@ -423,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524000709837</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="modify get persons by username or id too">
+      <created>1524001970765</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1524001970799</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -498,7 +505,8 @@
     <MESSAGE value="added allowed headers:&#10;Access-Control-Allow-Headers&#10;to communicate with front" />
     <MESSAGE value="added allowed headers:&#10;Access-Control-Allow-Methods&#10;to communicate with front" />
     <MESSAGE value="modify get persons by username" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify get persons by username" />
+    <MESSAGE value="modify get persons by username or id too" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify get persons by username or id too" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -731,16 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ucb_back/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="160" column="24" lean-forward="true" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="24" />
-          <folding>
-            <element signature="e#382#391#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/d5568766/bc5bc9e8-317b-4bd3-8a0d-add44d52bf5a/main.django_session">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -813,6 +811,16 @@
         <state relative-caret-position="221">
           <caret line="50" column="46" lean-forward="false" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ucb_back/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="139" column="3" lean-forward="false" selection-start-line="139" selection-start-column="3" selection-end-line="139" selection-end-column="3" />
+          <folding>
+            <element signature="e#382#391#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
