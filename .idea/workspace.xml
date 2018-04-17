@@ -57,8 +57,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ucb_back/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="200" column="5" lean-forward="true" selection-start-line="200" selection-start-column="5" selection-end-line="200" selection-end-column="33" />
+            <state relative-caret-position="278">
+              <caret line="201" column="5" lean-forward="true" selection-start-line="201" selection-start-column="5" selection-end-line="201" selection-end-column="33" />
               <folding>
                 <element signature="e#382#391#0" expanded="true" />
               </folding>
@@ -389,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523995233185</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added allowed headers:&#10;Access-Control-Allow-Headers&#10;to communicate with front">
+      <created>1523995735847</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1523995735847</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -461,7 +468,8 @@
     <MESSAGE value="final configuration CORS&#10;and defined lifetime of jw tokens" />
     <MESSAGE value="implemented create user join persona" />
     <MESSAGE value="added allowed headers:&#10;Access-Control-Allow-Origin&#10;to communicate with front" />
-    <option name="LAST_COMMIT_MESSAGE" value="added allowed headers:&#10;Access-Control-Allow-Origin&#10;to communicate with front" />
+    <MESSAGE value="added allowed headers:&#10;Access-Control-Allow-Headers&#10;to communicate with front" />
+    <option name="LAST_COMMIT_MESSAGE" value="added allowed headers:&#10;Access-Control-Allow-Headers&#10;to communicate with front" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -730,8 +738,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ucb_back/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="200" column="5" lean-forward="true" selection-start-line="200" selection-start-column="5" selection-end-line="200" selection-end-column="33" />
+        <state relative-caret-position="278">
+          <caret line="201" column="5" lean-forward="true" selection-start-line="201" selection-start-column="5" selection-end-line="201" selection-end-column="33" />
           <folding>
             <element signature="e#382#391#0" expanded="true" />
           </folding>
