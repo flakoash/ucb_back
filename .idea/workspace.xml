@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bb20d835-f56c-4c53-83cf-3ed28a65e721" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Persona/serializers.py" afterPath="$PROJECT_DIR$/Persona/serializers.py" />
-      <change beforePath="$PROJECT_DIR$/Persona/urls.py" afterPath="$PROJECT_DIR$/Persona/urls.py" />
       <change beforePath="$PROJECT_DIR$/Persona/views.py" afterPath="$PROJECT_DIR$/Persona/views.py" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,21 +71,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Persona/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+            <state relative-caret-position="221">
+              <caret line="50" column="46" lean-forward="false" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Persona/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="44" />
+            <state relative-caret-position="28">
+              <caret line="3" column="56" lean-forward="false" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -169,8 +166,8 @@
         <option value="$PROJECT_DIR$/Persona/models.py" />
         <option value="$PROJECT_DIR$/ucb_back/settings.py" />
         <option value="$PROJECT_DIR$/Persona/serializers.py" />
-        <option value="$PROJECT_DIR$/Persona/views.py" />
         <option value="$PROJECT_DIR$/Persona/urls.py" />
+        <option value="$PROJECT_DIR$/Persona/views.py" />
       </list>
     </option>
   </component>
@@ -419,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523995942866</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="modify get persons by username">
+      <created>1524000709837</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1524000709837</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -493,7 +497,8 @@
     <MESSAGE value="added allowed headers:&#10;Access-Control-Allow-Origin&#10;to communicate with front" />
     <MESSAGE value="added allowed headers:&#10;Access-Control-Allow-Headers&#10;to communicate with front" />
     <MESSAGE value="added allowed headers:&#10;Access-Control-Allow-Methods&#10;to communicate with front" />
-    <option name="LAST_COMMIT_MESSAGE" value="added allowed headers:&#10;Access-Control-Allow-Methods&#10;to communicate with front" />
+    <MESSAGE value="modify get persons by username" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify get persons by username" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -785,6 +790,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Persona/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="3" column="56" lean-forward="false" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Persona/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -797,16 +810,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Persona/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Persona/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="44" />
+        <state relative-caret-position="221">
+          <caret line="50" column="46" lean-forward="false" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
           <folding />
         </state>
       </provider>

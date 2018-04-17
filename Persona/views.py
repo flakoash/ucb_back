@@ -20,14 +20,37 @@ class PersonaView(views.APIView):
 
 
 class PersonaDetailView(views.APIView):
+    def is_number(self, s):
+        try:
+            float(s)
+            return True
+        except ValueError:
+            pass
+        try:
+            import unicodedata
+            unicodedata.numeric(s)
+            return True
+        except (TypeError, ValueError):
+            pass
+        return False
+
     def get_object(self, pk):
         try:
             return Persona.objects.get(user__username=pk)
         except Persona.DoesNotExist:
             raise Http404
 
+    def get_object_byid(self, pk):
+        try:
+            return Persona.objects.get(id=pk)
+        except Persona.DoesNotExist:
+            raise Http404
+
     def get(self, request, pk, format=None):
-        queryset = self.get_object(pk)
+        if self.is_number(pk):
+            queryset = self.get_object_byid(pk)
+        else:
+            queryset = self.get_object(pk)
         serializer = PersonaSerializer(queryset)
         return Response(serializer.data)
 
