@@ -21,7 +21,7 @@ class PersonaSerializer(DynamicFieldsMixin, serializers.ModelSerializer):
         fields = '__all__'
 
     def create(self, validated_data):
-        user_data = self.request.data['user']
+        user_data = self.context['user']
         if User.objects.filter(username=user_data['username']).exists():
             user = User.objects.get(username=user_data['username'])
         else:

@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bb20d835-f56c-4c53-83cf-3ed28a65e721" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Persona/models.py" afterPath="$PROJECT_DIR$/Persona/models.py" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change beforePath="$PROJECT_DIR$/Persona/serializers.py" afterPath="$PROJECT_DIR$/Persona/serializers.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,11 +47,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Persona/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+            <state relative-caret-position="70">
+              <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -70,7 +69,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Persona/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
@@ -148,8 +147,8 @@
         <option value="$PROJECT_DIR$/artisan/rest/views.py" />
         <option value="$PROJECT_DIR$/Persona/views.py" />
         <option value="$PROJECT_DIR$/Persona/migrations/0003_auto_20180418_2104.py" />
-        <option value="$PROJECT_DIR$/Persona/serializers.py" />
         <option value="$PROJECT_DIR$/Persona/models.py" />
+        <option value="$PROJECT_DIR$/Persona/serializers.py" />
       </list>
     </option>
   </component>
@@ -433,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524085998408</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="FIXED MODEL PERSONAS">
+      <created>1524087084731</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1524087084731</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -512,7 +518,8 @@
     <MESSAGE value="habilitar seguridad de tokens" />
     <MESSAGE value="added fields to persona" />
     <MESSAGE value="fixed serializer" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed serializer" />
+    <MESSAGE value="FIXED MODEL PERSONAS" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIXED MODEL PERSONAS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -825,22 +832,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Persona/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Persona/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Persona/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
