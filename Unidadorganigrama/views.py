@@ -7,11 +7,8 @@ from django.http import Http404
 
 class UnidadorganigramaView(views.APIView):
     def get(self, request, format=None):
-        cols = request.data['cols']
-        print cols[0]
-        queryset = Unidadorganigrama.objects.only("name","cod")
-        serializer = UnidadorganigramaSerializer(queryset, many=True)
-        serializer.fields("name","cod")
+        queryset = Unidadorganigrama.objects.all()
+        serializer = UnidadorganigramaSerializer(queryset, many=True, context={'request': request})
         return Response(serializer.data)
 
     def post(self, request, *args, **kwargs):
@@ -32,7 +29,7 @@ class UnidadorganigramaDetailView(views.APIView):
 
     def get(self, request, pk, format=None):
         queryset = self.get_object(pk)
-        serializer = UnidadorganigramaSerializer(queryset)
+        serializer = UnidadorganigramaSerializer(queryset, context={'request': request})
         return Response(serializer.data)
 
     def put(self, request, pk, format=None):

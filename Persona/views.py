@@ -8,7 +8,7 @@ from django.http import Http404
 class PersonaView(views.APIView):
     def get(self, request, format=None):
         queryset = Persona.objects.all()
-        serializer = PersonaSerializer(queryset, many=True)
+        serializer = PersonaSerializer(queryset, many=True, context={'request': request})
         return Response(serializer.data)
 
     def post(self, request, *args, **kwargs):
@@ -34,35 +34,39 @@ class PersonaDetailView(views.APIView):
             pass
         return False
 
-    def get_object(self, pk):
+    def get_object_by_usrname(self, pk):
         try:
             return Persona.objects.get(user__username=pk)
         except Persona.DoesNotExist:
             raise Http404
 
-    def get_object_byid(self, pk):
+    def get_object(self, pk):
         try:
             return Persona.objects.get(id=pk)
         except Persona.DoesNotExist:
             raise Http404
 
-    def get(self, request, pk, format=None):
+    def get_queryset(self,pk):
         if self.is_number(pk):
-            queryset = self.get_object_byid(pk)
-        else:
             queryset = self.get_object(pk)
-        serializer = PersonaSerializer(queryset)
+        else:
+            queryset = self.get_object_by_usrname(pk)
+        return queryset
+
+    def get(self, request, pk, format=None):
+        queryset = self.get_queryset(pk)
+        serializer = PersonaSerializer(queryset, context={'request': request})
         return Response(serializer.data)
 
     def put(self, request, pk, format=None):
-        queryset = self.get_object(pk)
-        serializer = PersonaSerializer(queryset, data=request.data)
+        queryset = self.get_queryset(pk)
+        serializer = PersonaSerializer(queryset, data=request.data, context={'user': request.data['user']})
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request, pk, format=None):
-        queryset = self.get_object(pk)
+        queryset = self.get_queryset(pk)
         queryset.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)

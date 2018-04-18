@@ -6,7 +6,16 @@ from django.dispatch import receiver
 # Create your models here.
 
 class Persona(models.Model):
-    name = models.CharField(max_length=100)
+    codUCB = models.CharField(max_length=10)
+    documento = models.CharField(max_length=15)
+    nombre = models.CharField(max_length=100)
+    primerApellido = models.CharField(max_length=100)
+    segundoApellido = models.CharField(max_length=100)
+    apCasada = models.CharField(max_length=100)
+    fechaNacimiento = models.DateField()
+    genero = models.CharField(max_length=1)
+    nacionalidad = models.CharField(max_length=50)
+    active = models.BooleanField(default=True)
     user = models.OneToOneField(User, on_delete=models.PROTECT, null=True)
 
     def __str__(self):

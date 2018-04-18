@@ -8,7 +8,7 @@ from django.http import Http404
 class XOXOXOView(views.APIView):
     def get(self, request, format=None):
         queryset = XOXOXO.objects.all()
-        serializer = XOXOXOSerializer(queryset, many=True)
+        serializer = XOXOXOSerializer(queryset, many=True, context={'request': request})
         return Response(serializer.data)
 
     def post(self, request, *args, **kwargs):
@@ -28,7 +28,7 @@ class XOXOXODetailView(views.APIView):
 
     def get(self, request, pk, format=None):
         queryset = self.get_object(pk)
-        serializer = XOXOXOSerializer(queryset)
+        serializer = XOXOXOSerializer(queryset, context={'request': request})
         return Response(serializer.data)
 
     def put(self, request, pk, format=None):

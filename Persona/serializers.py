@@ -1,25 +1,41 @@
 from rest_framework import serializers
 from .models import Persona
 from django.contrib.auth.models import User
+from drf_dynamic_fields import DynamicFieldsMixin
+import string
+import random
 
 
-class UserSerializer(serializers.ModelSerializer):
+class UserSerializer(DynamicFieldsMixin, serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('username', 'password')
 
 
-class PersonaSerializer(serializers.ModelSerializer):
-    user = UserSerializer(many=False, read_only=False)
+
+class PersonaSerializer(DynamicFieldsMixin, serializers.ModelSerializer):
+    user = UserSerializer(many=False, read_only=True)
 
     class Meta:
         model = Persona
         fields = '__all__'
-        #depth = 1
 
     def create(self, validated_data):
-        user_data = validated_data.pop('user')
-        user = User.objects.create_user(username=user_data['username'],email=user_data['username'], password=user_data['password'])
-        persona = Persona.objects.create(user=user, **validated_data)
-
+        user_data = self.request.data['user']
+        if User.objects.filter(username=user_data['username']).exists():
+            user = User.objects.get(username=user_data['username'])
+        else:
+            user = User.objects.create_user(username=user_data['username'],email=user_data['username'], password=user_data['password'])
+        persona = Persona.objects.create(user = user, **validated_data)
         return persona
+
+    def update(self, instance, validated_data):
+        instance.name = validated_data.get('name', instance.name)
+        instance.save()
+        user_data = self.context['user']
+        user = instance.user
+        user.username = user_data['username']
+        user.email = user_data['username']
+        user.set_password(user_data['password'])
+        user.save()
+        return instance

@@ -1,6 +1,9 @@
 from rest_framework import serializers
 from .models import Unidadorganigrama
-class UnidadorganigramaSerializer(serializers.ModelSerializer):
+from drf_dynamic_fields import DynamicFieldsMixin
+
+
+class UnidadorganigramaSerializer(DynamicFieldsMixin, serializers.ModelSerializer):
     class Meta:
         model = Unidadorganigrama
         fields = '__all__'
