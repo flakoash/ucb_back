@@ -30,7 +30,10 @@ class PersonaSerializer(DynamicFieldsMixin, serializers.ModelSerializer):
         return persona
 
     def update(self, instance, validated_data):
-        instance.name = validated_data.get('name', instance.name)
+
+        #instance.nombre = validated_data.get('nombre', instance.name)
+        persona = Persona.objects.create(**validated_data)
+        instance = persona
         instance.save()
         user_data = self.context['user']
         user = instance.user

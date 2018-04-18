@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bb20d835-f56c-4c53-83cf-3ed28a65e721" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Persona/models.py" afterPath="$PROJECT_DIR$/Persona/models.py" />
       <change beforePath="$PROJECT_DIR$/Persona/serializers.py" afterPath="$PROJECT_DIR$/Persona/serializers.py" />
-      <change beforePath="$PROJECT_DIR$/Persona/views.py" afterPath="$PROJECT_DIR$/Persona/views.py" />
-      <change beforePath="$PROJECT_DIR$/Unidadorganigrama/serializers.py" afterPath="$PROJECT_DIR$/Unidadorganigrama/serializers.py" />
-      <change beforePath="$PROJECT_DIR$/Unidadorganigrama/views.py" afterPath="$PROJECT_DIR$/Unidadorganigrama/views.py" />
-      <change beforePath="$PROJECT_DIR$/artisan/rest/serializers.py" afterPath="$PROJECT_DIR$/artisan/rest/serializers.py" />
-      <change beforePath="$PROJECT_DIR$/artisan/rest/views.py" afterPath="$PROJECT_DIR$/artisan/rest/views.py" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/templates/rest_framework/api.html" afterPath="$PROJECT_DIR$/templates/rest_framework/api.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,11 +47,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Persona/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="280">
+              <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -77,7 +69,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Persona/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="112">
@@ -154,9 +146,9 @@
         <option value="$PROJECT_DIR$/Unidadorganigrama/views.py" />
         <option value="$PROJECT_DIR$/artisan/rest/views.py" />
         <option value="$PROJECT_DIR$/Persona/views.py" />
-        <option value="$PROJECT_DIR$/Persona/serializers.py" />
         <option value="$PROJECT_DIR$/Persona/models.py" />
         <option value="$PROJECT_DIR$/Persona/migrations/0003_auto_20180418_2104.py" />
+        <option value="$PROJECT_DIR$/Persona/serializers.py" />
       </list>
     </option>
   </component>
@@ -201,12 +193,6 @@
               <item name="ucb_back" type="b2602c69:ProjectViewProjectNode" />
               <item name="ucb_back" type="462c0819:PsiDirectoryNode" />
               <item name="Persona" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ucb_back" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ucb_back" type="462c0819:PsiDirectoryNode" />
-              <item name="Persona" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -432,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524002022086</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="added fields to persona">
+      <created>1524085874472</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1524085874473</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -509,7 +502,8 @@
     <MESSAGE value="modify get persons by username" />
     <MESSAGE value="modify get persons by username or id too" />
     <MESSAGE value="habilitar seguridad de tokens" />
-    <option name="LAST_COMMIT_MESSAGE" value="habilitar seguridad de tokens" />
+    <MESSAGE value="added fields to persona" />
+    <option name="LAST_COMMIT_MESSAGE" value="added fields to persona" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -666,6 +660,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
           <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -723,6 +718,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="31" column="87" lean-forward="false" selection-start-line="31" selection-start-column="87" selection-end-line="31" selection-end-column="87" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -782,16 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Persona/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/d5568766/bc5bc9e8-317b-4bd3-8a0d-add44d52bf5a/main.Persona_persona">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -836,6 +822,16 @@
           <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Persona/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
