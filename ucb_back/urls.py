@@ -21,6 +21,8 @@ from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
 )
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
@@ -32,4 +34,4 @@ urlpatterns = [
     url(r'^api/auth/token/refresh/$', TokenRefreshView.as_view()),
     url('', include('Unidadorganigrama.urls')), 
     url('', include('Persona.urls')), 
- ]
+ ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -12,7 +12,6 @@ class UserSerializer(DynamicFieldsMixin, serializers.ModelSerializer):
         fields = ('username', 'password')
 
 
-
 class PersonaSerializer(DynamicFieldsMixin, serializers.ModelSerializer):
     user = UserSerializer(many=False, read_only=True)
 
