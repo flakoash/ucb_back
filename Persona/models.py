@@ -11,7 +11,7 @@ class Persona(models.Model):
     nombre = models.CharField(max_length=100)
     primerApellido = models.CharField(max_length=100)
     segundoApellido = models.CharField(max_length=100)
-    apCasada = models.CharField(max_length=100)
+    apCasada = models.CharField(max_length=100, null=True)
     fechaNacimiento = models.DateField()
     genero = models.CharField(max_length=1)
     nacionalidad = models.CharField(max_length=50)
@@ -19,7 +19,7 @@ class Persona(models.Model):
     user = models.OneToOneField(User, on_delete=models.PROTECT, null=True)
 
     def __str__(self):
-        return self.name
+        return self.nombre + " " +self.primerApellido
 
 
 
