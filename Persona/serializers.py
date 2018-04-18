@@ -31,11 +31,19 @@ class PersonaSerializer(DynamicFieldsMixin, serializers.ModelSerializer):
 
     def update(self, instance, validated_data):
 
-        #instance.nombre = validated_data.get('nombre', instance.name)
-        persona = Persona.objects.create(**validated_data)
-        instance = persona
+        instance.nombre = validated_data.get('nombre', instance.nombre)
+        instance.codUCB = validated_data.get('codUCB', instance.codUCB)
+        instance.documento = validated_data.get('documento', instance.documento)
+        instance.primerApellido = validated_data.get('primerApellido', instance.primerApellido)
+        instance.segundoApellido = validated_data.get('segundoApellido', instance.segundoApellido)
+        instance.apCasada = validated_data.get('apCasada', instance.apCasada)
+        instance.fechaNacimiento = validated_data.get('fechaNacimiento', instance.fechaNacimiento)
+        instance.genero = validated_data.get('genero', instance.genero)
+        instance.nacionalidad = validated_data.get('nacionalidad', instance.nacionalidad)
+        instance.active = validated_data.get('active', instance.active)
         instance.save()
         user_data = self.context['user']
+
         user = instance.user
         user.username = user_data['username']
         user.email = user_data['username']
