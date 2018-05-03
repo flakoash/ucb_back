@@ -107,7 +107,7 @@ DATABASES = {
 #DATABASES = {
 #        'default': {
 #            'ENGINE': 'django.db.backends.mysql',
-#            'NAME': 'rrhh',
+#            'NAME': 'rrhh_dj',
 #            'USER': 'remoto',
 #            'PASSWORD': 'Rrhh1234',
 #            'HOST': '192.168.18.63',
@@ -137,9 +137,9 @@ AUTHENTICATION_BACKENDS = (
 
 # Rest Framework
 REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-    ),
+   # 'DEFAULT_PERMISSION_CLASSES': (
+   #     'rest_framework.permissions.IsAuthenticated',
+   # ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
         'rest_framework.authentication.SessionAuthentication',
@@ -171,7 +171,7 @@ SIMPLE_JWT = {
 
 
 
-CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 
 

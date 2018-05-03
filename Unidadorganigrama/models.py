@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Unidadorganigrama(models.Model):
-    cod = models.IntegerField(unique=True,primary_key=True)
+    cod = models.IntegerField(unique=True)
     name = models.CharField(max_length=100)
     dad = models.ForeignKey('Unidadorganigrama', on_delete=models.CASCADE, null=True)
 

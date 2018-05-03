@@ -2,8 +2,6 @@ from rest_framework import serializers
 from .models import Persona
 from django.contrib.auth.models import User
 from drf_dynamic_fields import DynamicFieldsMixin
-import string
-import random
 
 
 class UserSerializer(DynamicFieldsMixin, serializers.ModelSerializer):

@@ -3,6 +3,8 @@ from rest_framework.response import Response
 from .serializers import PersonaSerializer
 from .models import Persona
 from django.http import Http404
+from django.contrib.auth.models import User
+from rest_framework.parsers import MultiPartParser, ParseError
 
 
 class PersonaView(views.APIView):
@@ -70,3 +72,19 @@ class PersonaDetailView(views.APIView):
         queryset = self.get_queryset(pk)
         queryset.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+class imageUpload(views.APIView):
+    #parser_classes = MultiPartParser
+
+    def post(self, request, format=None):
+        try:
+            file = request.data['photo']
+        except KeyError:
+            raise ParseError('Request has no resource file attached')
+        username = request.data['username']
+        print username
+        person = Persona.objects.get(user__username=username)
+        person.photo.delete(save=True)
+        person.photo = file
+        person.save()
+        return Response(status=status.HTTP_201_CREATED)
