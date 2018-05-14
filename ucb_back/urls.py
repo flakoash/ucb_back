@@ -34,4 +34,17 @@ urlpatterns = [
     url(r'^api/auth/token/refresh/$', TokenRefreshView.as_view()),
     url('', include('Unidadorganigrama.urls')), 
     url('', include('Persona.urls')), 
- ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    url('', include('Unidadorganizacional.urls')), 
+    url('', include('Nivel.urls')),
+    url('', include('Cargo.urls')), 
+    url('', include('Regional.urls')),
+    url('', include('Catalogodatos.urls')), 
+    url('', include('Performancearea.urls')), 
+    url('', include('Organizationalchartunit.urls')), 
+    url('', include('Organizationalunit.urls')), 
+    url('', include('Level.urls')), 
+    url('', include('Position.urls')), 
+    url('', include('Contract.urls')), 
+    url('', include('Catalogue.urls')), 
+    url('', include('Person.urls')), 
+ ]

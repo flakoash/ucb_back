@@ -40,8 +40,16 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'Unidadorganigrama',
-    'Persona',
+
+    'Organizationalchartunit',
+    'Person',
+    'Organizationalunit',
+    'Level',
+    'Position',
+    'Regional',
+    'Contract',
+    'Catalogue',
+    'Performancearea',
 )
 
 MIDDLEWARE_CLASSES = (
